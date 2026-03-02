@@ -19,7 +19,7 @@ class AltPhpPlugin extends AbstractPlugin
         ->type('php')
         ->label('alt-php 7.3')
         ->handler(\App\Services\PHP\PHP::class)   
-        ->versions(['7.3'])                       // just this one version
+        ->versions(['latest'])                       // just this one version
         ->data([
                 'cli_binary' => '/opt/alt/php73/usr/bin/php',     // typical CloudLinux path
                 'fpm_binary' => '/opt/alt/php73/usr/sbin/php-fpm',
