@@ -29,7 +29,7 @@ class AltPhpPlugin extends AbstractPlugin
                 ],
                 'ini_path' => '/opt/alt/php73/etc/php.ini',       // or /etc/cl.selector/
                 'fpm_pool_path' => '/etc/php-fpm.d/www.conf',     // usually per-version in alt-php
-        // optional: 'is_default' => true,   ← see below about making it default
+                'is_default' => true
         ])
         ->register();
 
